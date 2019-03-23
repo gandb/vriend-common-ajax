@@ -1,0 +1,24 @@
+{
+  "name": "vriend-common-ajax",
+  "version": "1.0.1",
+  "description": "Ajax common",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gandb/vriend-common-ajax"
+  },
+  "keywords": [
+    "npm",
+    "module",
+    "javascript"
+  ],
+  "author": "gandb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gandb/vriend-common-ajax"
+  },
+  "homepage": "https://github.com/gandb/vriend-common-ajax#readme"
+}
