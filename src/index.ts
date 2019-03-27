@@ -1,5 +1,7 @@
- 
 
+ 
+import {XMLHttpRequest} from './modules';  
+ 
  export class Ajax<T>{ 
 
 	public get(url:string):Promise<T>
@@ -11,7 +13,20 @@
 
 	    xhr.onload = function() { 
 	      if (xhr.status == 200) { 
-	        resolve(JSON.parse(xhr.response) as T);
+
+	      	let normalResponse:string = xhr.response;
+	      	let onlyTestResponse:string = xhr.responseText;
+
+	      	let response:string = (normalResponse)?normalResponse:onlyTestResponse;
+
+			if(response)
+			{
+	        	resolve(JSON.parse(response) as T);
+	        }
+	        else
+	        {
+	        	reject(Error("XMLHttpRequest Error"));
+	        }
 	      } else { 
 	        reject(Error(xhr.statusText));
 	      }

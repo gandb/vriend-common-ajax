@@ -1,3 +1,11 @@
-#necessário instalar o typescript:
-sudo npm install -g typescript
-#para dar o build, basta rodar tsc
+1-) necessário instalar o typescript:
+#sudo npm install -g typescript
+
+2-) adicionar o script no arquivo package.json:
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Building project...\" && tsc && echo \"Building SUCCESS!!!\" "
+  }
+
+3-) para dar o build, basta rodar :
+#npm run build

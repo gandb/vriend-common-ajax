@@ -2,10 +2,10 @@
   "name": "vriend-common-ajax",
   "version": "1.0.2",
   "description": "Ajax common",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"Building project...\" && tsc && echo \"Building SUCCESS!!!\" "
+    "build": "echo \"Building project...\" && tsc && echo \"Building SUCCESS!!!\" ",
+    "test": "mocha -r ts-node/register tests/**/*.test.ts"
   },
   "repository": {
     "type": "git",
@@ -22,11 +22,17 @@
     "url": "https://github.com/gandb/vriend-common-ajax"
   },
   "homepage": "https://github.com/gandb/vriend-common-ajax#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "@types/jest": "^24.0.11",
-    "jest": "^24.5.0",
-    "ts-jest": "^24.0.0",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "ts-node": "^8.0.3",
     "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "expect": "^24.5.0",
+    "xmlhttprequest": "^1.8.0"
   }
 }
