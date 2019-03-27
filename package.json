@@ -1,6 +1,6 @@
 {
   "name": "vriend-common-ajax",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Ajax common",
   "main": "build/index.js",
   "scripts": {
